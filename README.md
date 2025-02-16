@@ -5,7 +5,7 @@
 - matplotlib
 - numpy
 - aeon toolbox
-- ScikitLearn
+- ScikitLearn toolbox
 - pyTEKA (https://github.com/pfmarteau/py-TEKA)
 
 # Note
