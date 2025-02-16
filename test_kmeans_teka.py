@@ -60,6 +60,7 @@ normaliser = Normalizer()
 X = normaliser.fit_transform(X)
 # Transpose X to match tslearn's expected shape (n_ts, sz, d)
 X = X.swapaxes(1, 2)
+print("#ts:", len(y), "#clusters", n_clusters, "length:", len(X[0]), "dim:", len(X[0,0]))
 
 #Test KMedois_KDTW
 method_name = "KMedoids_KDTW"
