@@ -47,6 +47,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--dataset', default='NATOPS', help='AEON/UCR dataset name to process')
 parser.add_argument('--sigma', default=1., help='sigma meta parameter')
 parser.add_argument('--epsilon', default=1e-300, help='epsilon meta parameter')
+parser.add_argument('--n_ts_max', default=10000, help='max number of processed time series')
 try:
     args = parser.parse_args()
 except SystemExit:
@@ -60,7 +61,10 @@ normaliser = Normalizer()
 X = normaliser.fit_transform(X)
 # Transpose X to match tslearn's expected shape (n_ts, sz, d)
 X = X.swapaxes(1, 2)
-print("#ts:", len(y), "#clusters", n_clusters, "length:", len(X[0]), "dim:", len(X[0,0]))
+N = min(len(y),int(args.n_ts_max))
+X = X[:N,:,:]
+y = y[:N]
+print("#ts:", N, "#clusters", n_clusters, "length:", len(X[0]), "dim:", len(X[0,0]))
 
 #Test KMedois_KDTW
 method_name = "KMedoids_KDTW"
