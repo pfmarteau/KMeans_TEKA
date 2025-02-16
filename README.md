@@ -8,7 +8,8 @@
 - ScikitLearn
 - pyTEKA (https://github.com/pfmarteau/py-TEKA)
 
-# This code includes KMedoids_KDTW, an implementation of the kmedoids algorithm using the KDTW kernel [2] (that is used by TEKA). KMedoids_KDTW provides the initials centroids to the TEKA algorithm.
+# Note
+This code includes KMedoids_KDTW, an implementation of the kmedoids algorithm using the KDTW kernel [2] (that is used by TEKA). KMedoids_KDTW provides the initials centroids to the TEKA algorithm.
 
 ## Testing Kmeans-TEKA on UCR/AEON datasets
 $ python3 test_kmeans_teka.py --dataset NATOPS --sigma 1. --epsilon 1e-300
