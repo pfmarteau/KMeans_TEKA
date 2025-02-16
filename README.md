@@ -14,6 +14,16 @@ This code includes KMedoids_KDTW, an implementation of the kmedoids algorithm us
 ## Testing Kmeans-TEKA on UCR/AEON datasets
 $ python3 test_kmeans_teka.py --dataset NATOPS --sigma 1. --epsilon 1e-300
 
+usage: test_kmeans_teka.py [-h] [--dataset DATASET] [--sigma SIGMA] [--epsilon EPSILON] [--n_ts_max N_TS_MAX]
+
+options:
+  -h, --help           show this help message and exit
+  --dataset DATASET    AEON/UCR dataset name to process
+  --sigma SIGMA        sigma meta parameter
+  --epsilon EPSILON    epsilon meta parameter
+  --n_ts_max N_TS_MAX  max number of processed time series
+
+
 ## References
 
 [1] Marteau, P.F., Times series averaging and denoising from a probabilistic perspective on time-elastic kernels International Journal of Applied Mathematics and Computer Science, Vol 29, num 2, pp 375–392, De Gruyter editor, 2019.\
