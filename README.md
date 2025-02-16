@@ -12,6 +12,7 @@
 This code includes KMedoids_KDTW, an implementation of the kmedoids algorithm using the KDTW kernel [2] (that is used by TEKA). KMedoids_KDTW provides the initials centroids to the TEKA algorithm.
 
 ## Testing Kmeans-TEKA on UCR/AEON datasets
+```text
 $ python3 test_kmeans_teka.py --dataset NATOPS --sigma 1. --epsilon 1e-300
 
 usage: test_kmeans_teka.py [-h] [--dataset DATASET] [--sigma SIGMA] [--epsilon EPSILON] [--n_ts_max N_TS_MAX]
@@ -27,7 +28,7 @@ options:
   --epsilon EPSILON    epsilon meta parameter
   
   --n_ts_max N_TS_MAX  max number of processed time series
-  
+ ``` 
 
 
 ## References
