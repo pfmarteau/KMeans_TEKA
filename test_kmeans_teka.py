@@ -55,7 +55,6 @@ except SystemExit:
 
 print("Processing", args.dataset)
 X, y = load_classification(name=args.dataset)
-n_clusters = len(np.unique(y))
     
 normaliser = Normalizer()
 X = normaliser.fit_transform(X)
@@ -64,6 +63,7 @@ X = X.swapaxes(1, 2)
 N = min(len(y),int(args.n_ts_max))
 X = X[:N,:,:]
 y = y[:N]
+n_clusters = len(np.unique(y))
 print("#ts:", N, "#clusters", n_clusters, "length:", len(X[0]), "dim:", len(X[0,0]))
 
 #Test KMedois_KDTW
