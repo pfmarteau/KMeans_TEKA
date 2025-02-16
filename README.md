@@ -8,21 +8,11 @@
 - ScikitLearn
 - pyTEKA (https://github.com/pfmarteau/py-TEKA)
 
+# This code includes KMedoids_KDTW, an implementation of the kmedoids algorithm using the KDTW kernel [2] (that is used by TEKA). KMedoids_KDTW provides the initials centroids to the TEKA algorithm.
 
-## Testing Kmeans-TEKA on the Cylinder, Bell, Funnel dataset
-$ python3 testCBF.py
-<p float="left">
-  <img src="fig/CBF_ITEKA_15_c.jpg" width="200" height="150">
-  <img src="fig/CBF_ITEKA_15_b.jpg" width="200" height="150">
-  <img src="fig/CBF_ITEKA_15_f.jpg" width="200" height="150">
-  <img src="fig/CBF_ITEKA_Centroids.jpg" width="200" height="150">
-</p>
-<p float="left">
-  <img src="fig/CBF_ITEKA_15_c0.jpg" width="200" height="150">
-  <img src="fig/CBF_ITEKA_15_b0.jpg" width="200" height="150">
-  <img src="fig/CBF_ITEKA_15_f0.jpg" width="200" height="150">
-  <img src="fig/CBF_ITEKA_15_b_t0.jpg" width="200" height="150">
-</p>
+## Testing Kmeans-TEKA on UCR/AEON datasets
+$ python3 test_kmeans_teka.py --dataset NATOPS --sigma 1. --epsilon 1e-300
+
 
 Please cite this article if you wish to reference TEKA or Kmeans_TEKA:
 
