@@ -20,13 +20,9 @@ usage: test_kmeans_teka.py [-h] [--dataset DATASET] [--sigma SIGMA] [--epsilon E
 options:
 
   -h, --help           show this help message and exit
-  
   --dataset DATASET    AEON/UCR dataset name to process
-  
   --sigma SIGMA        sigma meta parameter
-  
   --epsilon EPSILON    epsilon meta parameter
-  
   --n_ts_max N_TS_MAX  max number of processed time series
  ``` 
 
