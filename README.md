@@ -1,19 +1,15 @@
-# KMeans_TEKA
+# KMeans-TEKA
 ## Implementation of the Kmeans algorithm for clustering time series using TEKA (Time Elastic Kernel Averaging of set of time series [1]). 
 ## Requirements
 - python3.*
 - matplotlib
 - numpy
+- aeon toolbox
 - ScikitLearn
-- pyTEKA
+- pyTEKA (https://github.com/pfmarteau/py-TEKA)
 
-## To install
-$ sh install.sh
 
-## To uninstall 
-$ sh uninstall.sh
-
-## Testing py-TEKA on the Cylinder, Bell, Funnel dataset
+## Testing Kmeans-TEKA on the Cylinder, Bell, Funnel dataset
 $ python3 testCBF.py
 <p float="left">
   <img src="fig/CBF_ITEKA_15_c.jpg" width="200" height="150">
